@@ -32,7 +32,7 @@ def read_more(id):
             return render_template('readmore.html', blog=blog)
     return render_template('readmore.html', blog=None, year=present_year)
 
-
+#small test edit
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
