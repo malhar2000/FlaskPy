@@ -1,0 +1,29 @@
+{%include 'header.html' %}
+
+
+    <section id="blogs">
+        <div class="row">
+            {%for blog in blogs%}
+            <div class="col-lg-12 card">
+                <div class="card-body">
+                    <h5 class="card-title">{{blog['title']}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{blog['subtitle']}}</h6>
+    <p class="card-text">{{blog['paragraph'].split('.')[0]+"."}}</p>
+    <a href="{{url_for('read_more',id=blog['id'])}}" class="card-link">read more</a>
+    <!-- <a href="#" class="card-link">Another link</a>
+           -->
+        </div>
+            </div>
+            </div>
+        {%endfor%}
+    </section>
+{%include 'footer.html' %}
+<script>
+    let header = document.getElementsByClassName('header')[0]
+    header.classList.add('header')
+    header.classList.remove('about-header')
+    header.classList.remove('contact-header')
+</script>
+</body>
+
+</html>

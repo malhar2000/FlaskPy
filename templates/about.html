@@ -1,0 +1,22 @@
+{%include 'header.html' %}
+
+
+    <section id="aboutinfo">
+        <div class="intro-container">
+
+            <p>I am a student at the University of Alberta. I am studying Bachelor of Computer Science specialization
+                -software practice.</p>
+            <p>Created this website as an effort during learning bootstrap and flask.</p>
+            <p>For my hobbies I like going to the gym, playing badminton and doing food experiments.</p>
+            <p>What I value most in my life is loyalty and self-discipline.</p>
+        </div>
+    </section>
+{%include 'footer.html' %}
+<script>
+    let header = document.getElementsByClassName('header')[0]
+    header.classList.add('about-header')
+    header.classList.remove('header')
+    header.classList.remove('contact-header')
+</script>
+</body>
+</html>

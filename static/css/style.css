@@ -1,0 +1,146 @@
+body, html{
+    margin:0;
+    border:0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*index.html*/
+.header{
+    background: url('../images/index-bg.jpg') center center;
+    background-size:cover;
+    height: 450px;
+    top:0;
+
+}
+.intro{
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+    text-shadow: 4px 4px 4px black;
+}
+
+/*navbar*/
+.nav-link{
+    color: #fff;
+    font-size: 17px;
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid red;
+    cursor:pointer;
+    padding: 5px 20px 3px;
+
+}
+.nav-item{
+     padding: 5px 20px;
+}
+.nav{
+    background-color: transparent;
+    opacity: 0.8;
+    top: 0;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 2rem;
+    margin: 5px 5px;
+}
+
+.navbar-toggler{
+    margin: 5px 10px;
+    border: 1px solid #fff;
+}
+
+/*index.html cardView*/
+
+#blogs{
+    padding: 3% 15%;
+
+}
+
+.card{
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+/*about.html*/
+.about-header{
+    background: url("../images/about-bg.jpg")  center center;
+    background-size:cover;
+    height: 500px;
+}
+
+.intro-container{
+    padding: 3% 15%;
+    text-align: center;
+    font-weight:bold;
+    font-size: 1.2rem;
+}
+
+/*readmore.html*/
+
+
+.readmore-container{
+
+    padding:0;
+
+}
+
+.readmore-header{
+    background: linear-gradient(to top left, #28b487, #7dd56f);
+    height: 400px;
+    text-align:center;
+}
+
+.readmore-header h2, h4{
+    position: relative;
+    top: 130px;
+}
+
+.readmore-description{
+    padding: 3% 15%;
+
+}
+
+.readmore-paragraph{
+text-align: center;
+border: 2px solid black;
+border-radius: 14px;
+}
+
+
+/*contact*/
+.contact-header{
+    background: #333;
+    height: 450px;
+}
+
+.contact-form{
+    padding: 3% 15%;
+
+}
+
+.form-group{
+margin: 10px 0;
+}
+
+.submit-btn{
+    text-align: center;
+}
+
+/*Footer*/
+#footer{
+    height: 200px;
+    background: #333;
+}
+.foot-holder{
+    position:relative;
+    top: 90px;
+    text-align: center;
+    color:#fff;
+}

@@ -1,0 +1,36 @@
+{%include 'header.html' %}
+
+    <div class="contact-form">
+        <form action="{{url_for('receive_data')}}" method="post">
+            <div class="form-group">
+                <label for="email-address">Email address</label>
+                <input type="email" class="form-control" id="email-address" placeholder="name@example.com" name="email">
+            </div>
+            <div class="form-group">
+                <label for="text-area">Message/Questions</label>
+                <textarea class="form-control" id="text-area" rows="4" name="message"></textarea>
+            </div>
+            <div class="submit-btn">
+                <input type="submit" id="submit-form" class="btn btn-outline-dark btn-lg">
+            </div>
+        </form>
+    </div>
+{%include 'footer.html' %}
+<script>
+    let header = document.getElementsByClassName('header')[0]
+    header.classList.remove('about-header')
+    header.classList.remove('header')
+    header.classList.add('contact-header')
+    let intro = document.getElementsByClassName('intro')[0]
+    intro.innerHTML = "Contact Me";
+</script>
+<!--<script>-->
+<!--    $(function(){-->
+<!--        $("#submit-form").on("click", function() {-->
+<!--            let email = $("#email-address").val();-->
+<!--            let message = $(#text-area").val();-->
+<!--            location.reload();-->
+<!--    })-->
+<!--</script>-->
+</body>
+</html>
